@@ -1,7 +1,29 @@
 aid: comento
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/comento.png
 name: Comento
-description: Comento is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Comento is a South Korean career development and mentoring platform based in
+  Seoul that connects job seekers with working professionals. The service offers
+  a Q&A community and timeline for career discussions, free unlimited mentoring
+  questions answered by industry practitioners, resume and cover letter (자기소개서)
+  review, an AI resume analyzer, interview preparation, and job-focused
+  educational programs including bootcamps (직무부트캠프) and classes for the Korean
+  job market. It also runs corporate training and university affiliation
+  partnerships. Comento operates as a consumer-facing web platform and does not
+  publish a public developer API or documentation surface; this profile was
+  surfaced as a portfolio company of 500 Global and enriched with the domain and
+  identity signals that are publicly observable.
 url: https://raw.githubusercontent.com/api-evangelist/comento/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Career
+- Mentoring
+- Recruitment
+- Education
+- Jobs
+- Community
+- South Korea
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +52,16 @@ maintainers:
 common:
 - type: Website
   url: https://comento.kr
+- type: Support
+  url: https://comento.kr/help
+- type: TermsOfService
+  url: https://comento.kr/agreement
+- type: PrivacyPolicy
+  url: https://comento.kr/agreement
+- type: DomainSecurity
+  url: security/comento-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
